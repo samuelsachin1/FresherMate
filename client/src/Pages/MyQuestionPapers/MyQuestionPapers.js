@@ -16,7 +16,7 @@ function MyQuestionPapers() {
     const fetchQuestionPapers = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('fresher-mate-server.vercel.app
+        const response = await axios.get('https://fresher-mate-server.vercel.app
 /questionpaper/getmyquestionpapers', {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ function MyQuestionPapers() {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`fresher-mate-server.vercel.app
+      await axios.delete(`https://fresher-mate-server.vercel.app
 /questionpaper/deletequestionpaper/${selectedItem._id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ function MyQuestionPapers() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `fresher-mate-server.vercel.app
+        `https://fresher-mate-server.vercel.app
 /questionpaper/downloadquestionpaper/${item.file.filename}`,
         {
           headers: {
@@ -81,7 +81,7 @@ function MyQuestionPapers() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `fresher-mate-server.vercel.app
+        `https://fresher-mate-server.vercel.app
 /questionpaper/previewQuestionPaper/${item.file.filename}`,
         {
           headers: {
