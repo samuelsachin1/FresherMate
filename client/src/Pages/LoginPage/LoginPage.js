@@ -14,7 +14,8 @@ function LoginPage() {
 
   const onSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:8000/login/checkuser', { rollNumber, password });
+      const response = await axios.post('fresher-mate-server.vercel.app
+/login/checkuser', { rollNumber, password });
       if (response.data.code === 200) {
         navigate('/home');
         message.success('Welcome! Glad to have you back!')
