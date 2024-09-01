@@ -74,7 +74,8 @@ function UploadQuestionPaper() {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/questionpaper/uploadquestionpaper', formData, {
+      const response = await axios.post('fresher-mate-server.vercel.app
+/questionpaper/uploadquestionpaper', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data', // Specify the content type
