@@ -52,7 +52,7 @@ function QuestionPaperSelect({ onFetchData }) {
     const token = localStorage.getItem('token');
     try {
       // Send a GET request to the backend with the selected data
-      const response = await axios.get(`fresher-mate-server.vercel.app
+      const response = await axios.get(`https://fresher-mate-server.vercel.app
 /QuestionPaper/getrequiredQuestionPaper?${queryString}`, {
         headers: {
           Authorization: `Bearer ${token}`,
