@@ -13,7 +13,8 @@ function MyBlogs() {
   useEffect(() => {
     // Fetch blogs on component mount
     const token = localStorage.getItem('token');
-    axios.get('http://localhost:8000/blog/myblogs', {
+    axios.get('fresher-mate-server.vercel.app
+/blog/myblogs', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -33,7 +34,8 @@ function MyBlogs() {
 
   const handleConfirmDelete = () => {
     const token = localStorage.getItem('token')
-    axios.delete(`http://localhost:8000/blog/deleteblog/${selectedBlogId}`,{
+    axios.delete(`fresher-mate-server.vercel.app
+/blog/deleteblog/${selectedBlogId}`,{
       headers:{
         Authorization: `Bearer ${token}`
       }
