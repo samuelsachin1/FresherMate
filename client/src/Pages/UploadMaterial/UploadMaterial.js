@@ -72,7 +72,7 @@ function UploadMaterial() {
     }
 
     try {
-      const response = await axios.post('fresher-mate-server.vercel.app
+      const response = await axios.post('https://fresher-mate-server.vercel.app
 /material/uploadmaterial', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
