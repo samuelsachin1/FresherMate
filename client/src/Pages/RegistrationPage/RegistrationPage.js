@@ -19,7 +19,7 @@ function RegistrationPage() {
 
   const onSubmit = async () => {
     try {
-      const response = await axios.post('fresher-mate-server.vercel.app
+      const response = await axios.post('https://fresher-mate-server.vercel.app
 /register/addnewuser', {
         rollNumber, firstName, lastName, yearOfPassout, branch, email, section, password, confirmPassword, semester
       });
