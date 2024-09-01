@@ -51,7 +51,8 @@ function MaterialSelect({ onFetchData }) {
     const token = localStorage.getItem('token');
     try {
       // Send a GET request to the backend with the selected data
-      const response = await axios.get(`http://localhost:8000/material/getrequiredmaterial?${queryString}`, {
+      const response = await axios.get(`fresher-mate-server.vercel.app
+/material/getrequiredmaterial?${queryString}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
