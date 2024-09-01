@@ -37,7 +37,7 @@ function WriteBlog() {
 
     try {
       // Create new blog
-      await axios.post('fresher-mate-server.vercel.app
+      await axios.post('https://fresher-mate-server.vercel.app
 /blog/write-blog', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
