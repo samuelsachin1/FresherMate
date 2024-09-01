@@ -11,7 +11,7 @@ function Homepage() {
     const fetchData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('fresher-mate-server.vercel.app
+        const response = await axios.get('https://fresher-mate-server.vercel.app
 /blog/getallblogs', {
           headers: {
             Authorization: `Bearer ${token}`,
