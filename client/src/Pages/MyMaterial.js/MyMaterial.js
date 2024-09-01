@@ -16,7 +16,8 @@ function MyMaterial() {
     const fetchMaterials = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:8000/material/getmymaterial', {
+        const response = await axios.get('fresher-mate-server.vercel.app
+/material/getmymaterial', {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -35,7 +36,8 @@ function MyMaterial() {
 
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:8000/material/deletematerial/${selectedItem._id}`, {
+      await axios.delete(`fresher-mate-server.vercel.app
+/material/deletematerial/${selectedItem._id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -53,7 +55,8 @@ function MyMaterial() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.get(
-        `http://localhost:8000/material/downloadmaterial/${item.file.filename}`,
+        `fresher-mate-server.vercel.app
+/material/downloadmaterial/${item.file.filename}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -78,7 +81,8 @@ function MyMaterial() {
     try {
       const token = localStorage.getItem('token');
       const response = await axios.get(
-        `http://localhost:8000/material/previewMaterial/${item.file.filename}`,
+        `fresher-mate-server.vercel.app
+/material/previewMaterial/${item.file.filename}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
