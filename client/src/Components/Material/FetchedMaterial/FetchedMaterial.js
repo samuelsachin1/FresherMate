@@ -17,7 +17,7 @@ function FetchedMaterial({ data, onGoBack, onMaterialClick }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `fresher-mate-server.vercel.app
+        `https://fresher-mate-server.vercel.app
 /material/downloadmaterial/${item.file.filename}`,
         {
           headers: {
@@ -44,7 +44,7 @@ function FetchedMaterial({ data, onGoBack, onMaterialClick }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `fresher-mate-server.vercel.app
+        `https://fresher-mate-server.vercel.app
 /material/previewMaterial/${item.file.filename}`,
         {
           headers: {
