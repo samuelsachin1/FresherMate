@@ -37,7 +37,8 @@ function WriteBlog() {
 
     try {
       // Create new blog
-      await axios.post('http://localhost:8000/blog/write-blog', formData, {
+      await axios.post('fresher-mate-server.vercel.app
+/blog/write-blog', formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'multipart/form-data',
