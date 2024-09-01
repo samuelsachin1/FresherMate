@@ -46,7 +46,7 @@ function UpdateBlog() {
 
     try {
       // Update existing blog
-      await axios.post(`fresher-mate-server.vercel.app
+      await axios.post(`https://fresher-mate-server.vercel.app
 /blog/updateblog/${blogData._id}`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
