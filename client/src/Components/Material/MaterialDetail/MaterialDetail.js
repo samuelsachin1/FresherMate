@@ -9,7 +9,8 @@ function MaterialDetail({ item, onGoBack }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:8000/material/downloadmaterial/${item.file.filename}`,
+        `fresher-mate-server.vercel.app
+/material/downloadmaterial/${item.file.filename}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -34,7 +35,8 @@ function MaterialDetail({ item, onGoBack }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:8000/material/previewMaterial/${item.file.filename}`,
+        `fresher-mate-server.vercel.app
+/material/previewMaterial/${item.file.filename}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
