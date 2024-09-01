@@ -9,7 +9,7 @@ function QuestionPaperDetail({ item, onGoBack }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `fresher-mate-server.vercel.app
+        `https://fresher-mate-server.vercel.app
 /QuestionPaper/downloadQuestionPaper/${item.file.filename}`,
         {
           headers: {
@@ -35,7 +35,7 @@ function QuestionPaperDetail({ item, onGoBack }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `fresher-mate-server.vercel.app
+        `https://fresher-mate-server.vercel.app
 /QuestionPaper/previewQuestionPaper/${item.file.filename}`,
         {
           headers: {
