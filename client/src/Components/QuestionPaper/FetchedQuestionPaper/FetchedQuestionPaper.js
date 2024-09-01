@@ -12,7 +12,8 @@ function FetchedQuestionPaper({ data, onGoBack, onQuestionPaperClick }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:8000/questionpaper/downloadQuestionPaper/${item.file.filename}`,
+        `fresher-mate-server.vercel.app
+/questionpaper/downloadQuestionPaper/${item.file.filename}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -37,7 +38,8 @@ function FetchedQuestionPaper({ data, onGoBack, onQuestionPaperClick }) {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `http://localhost:8000/questionpaper/previewQuestionPaper/${item.file.filename}`,
+        `fresher-mate-server.vercel.app
+/questionpaper/previewQuestionPaper/${item.file.filename}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
